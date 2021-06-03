@@ -11,29 +11,42 @@
         <title>Frontend Mentor | Stats preview card component</title>
     </head>
     <body>
-        <div class="card-container">
-            <main>
-                <h1>Get <em>insights</em> that help your business grow.</h1>
+        <div class="center-hv">
+            <div class="card-container">
+                <main>
+                    <h1>Get <em>insights</em> that help your business grow.</h1>
 
-                <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+                    <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
 
-                <div class="stats-container">
-                    <div class="stats-card">
-                        <h1>10k+</h1>
-                        <p>companies</p>
+                    <div class="stats-container">
+                        <div class="stats-card">
+                            <h1>10k+</h1>
+                            <p>companies</p>
+                        </div>
+                        <div class="stats-card">
+                            <h1>314</h1>
+                            <p>templates</p>
+                        </div>
+                        <div class="stats-card">
+                            <h1>12M+</h1>
+                            <p>queries</p>
+                        </div>
                     </div>
-                    <div class="stats-card">
-                        <h1>314</h1>
-                        <p>templates</p>
-                    </div>
-                    <div class="stats-card">
-                        <h1>12m+</h1>
-                        <p>queries</p>
-                    </div>
+                </main>
+                <div class="card-image">
+                    <img
+                        srcset="./img/image-header-mobile.jpg 654w, ./img/image-header-desktop.jpg 540w"
+                        sizes="(max-width: 800px) 654px, 540px"
+                        src="./img/image-header-mobile.jpg"
+                        alt=""
+                    />
+                    <!--           <img srcset="elva-fairy-480w.jpg 480w,
+             elva-fairy-800w.jpg 800w"
+     sizes="(max-width: 600px) 480px,
+            800px"
+     src="elva-fairy-800w.jpg"
+     alt="Elva dressed as a fairy">-->
                 </div>
-            </main>
-            <div class="card-image">
-                <img src="./img/image-header-mobile.jpg" alt="" />
             </div>
         </div>
         <div class="attribution">

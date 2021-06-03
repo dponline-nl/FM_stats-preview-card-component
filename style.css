@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
 img {
     display: block;
     width: 100%;
+    height: auto;
 }
 h1,
 h2,
@@ -21,9 +23,9 @@ h3,
 h4,
 h5,
 h6 {
-    padding: 0;
+    padding: 0 0 0.4em 0;
     margin: 0;
-    line-height: 1;
+    line-height: 1.4;
     text-align: center;
     color: hsl(0, 0%, 100%);
 }
@@ -37,7 +39,7 @@ main {
 }
 
 p {
-    padding: 1em 0;
+    padding: 0;
     text-align: center;
     line-height: 1.7;
 }
@@ -72,12 +74,11 @@ p {
     flex-direction: column;
     gap: 2em;
     align-items: center;
-    padding: 2em;
+    padding-top: 2em;
 }
 .stats-card p {
     text-transform: uppercase;
     color: hsla(0, 0%, 100%, 0.6);
-    padding: 0.7em;
 }
 
 .attribution {
@@ -90,4 +91,41 @@ p {
 }
 .attribution a:hover {
     opacity: 0.7;
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        align-self: center;
+        margin: 0;
+        padding: 2.5em;
+    }
+    .center-hv {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-container {
+        flex-direction: row;
+        width: 96%;
+        max-width: 1024px;
+    }
+
+    .stats-container {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .card-container > * {
+        max-width: 50%;
+    }
+
+    .card-image::after {
+        border-radius: 0 8px 8px 0;
+    }
+    .card-image img {
+        min-height: 100%;
+
+        border-radius: 0 8px 8px 0;
+    }
 }
