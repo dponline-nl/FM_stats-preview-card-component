@@ -10,4 +10,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./Screenshot.png)
+
+## Author
+
+-   Website - [DPonline](https://www.dponline.nl)
+-   Frontend Mentor - [@dponline-nl](https://www.frontendmentor.io/profile/dponline-nl)
